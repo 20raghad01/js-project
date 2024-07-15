@@ -298,7 +298,7 @@ body {
     z-index: 6;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-bottom-right-radius: max(50vw, 50vh);
-    border-top-left-radius: max(50vw, 50vh);
+    
 }
 
 .form-container.sign-in::before {
