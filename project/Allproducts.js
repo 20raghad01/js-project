@@ -62,43 +62,8 @@ fetch('https://dummyjson.com/products')
                 description: product.description
             }
 
-            /* /* addToCart.addEventListener('click', () => {
-                
-                cart.style.display = "block";
-                
-                // Create card data element
-                const cardData = document.createElement('div');
-                cardData.classList.add('cart-item'); // Add a class for styling
-                cardData.innerHTML = `
-                    <img src="${cartObj.img}" alt="${cartObj.title}" />
-                    <div>
-                        <h4>${cartObj.title}</h4>
-                        <p>$${cartObj.price}</p>
-                        <p>Rating: ${cartObj.rating}</p>
-                        <p>${cartObj.description}</p>
-                    </div>
-                    <div class="containerOfTrash">
-                        <i class="fas fa-trash"></i>
-                    </div>
-                `;
-                singleProductContentId.appendChild(cardData);
-                singleProductContentId.appendChild(closeIcon);
-
-                // Add event listener to the trash icon
-                const trashIcon = cardData.querySelector('.fas.fa-trash');
-                trashIcon.addEventListener('click', () => {
-                    
-                    cardData.remove();
-                });
-                closeIcon.style.color='white';
-                closeIcon.fontSize='19px';
-                closeIcon.addEventListener('click',() => {
-                    const cart=document.querySelector('.cart');
-                    cart.style.display='none'
-                })
-                
-            } ); */
-            } ); */
+           
+            } }); 
 
             allproductDiv.appendChild(allprice);
             // // allproductDiv.appendChild(addToCart);
@@ -177,13 +142,6 @@ fetch('https://dummyjson.com/products')
             return { product_img: product.thumbnail,product_category:product.category, product_name: product.title, product_price: `$${product.price}`, Element: allproductDiv };
         });
 
-        const p = document.querySelector('.all-prod');
-                p.addEventListener('click', () => {
-                output.forEach(product => {
-                  const isVisible = true; 
-                  product.Element.classList.toggle('hide', !isVisible);
-                  });
-                });
         const p = document.querySelector('.all-prod');
                 p.addEventListener('click', () => {
                 output.forEach(product => {
