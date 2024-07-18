@@ -66,9 +66,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
              const quanti = document.createElement('p');
              quanti.textContent = `${product.quant}X`;
              productDiv.appendChild(quanti);
-
-
-            
             // Append the product div to the container
             productsContainer.appendChild(productDiv);
         });

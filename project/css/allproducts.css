@@ -23,6 +23,7 @@
 
 .sidebar {
     position: fixed;
+    color: #f7cb65;
     top: 0;
     left: 0;
     height: 100vh;

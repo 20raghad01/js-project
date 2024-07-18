@@ -51,6 +51,7 @@ fetch('https://dummyjson.com/products')
             const productDetais = document.createElement('button');
             productDetais.id = "addToCartAllproducts"
             productDetais.textContent = 'View Product Details';
+            productDetais.textContent = 'View Product Details';
             productDetais.classList.add('addtocartButton');
 
             const cartObj = {
@@ -61,7 +62,7 @@ fetch('https://dummyjson.com/products')
                 description: product.description
             }
 
-            /* addToCart.addEventListener('click', () => {
+            /* /* addToCart.addEventListener('click', () => {
                 
                 cart.style.display = "block";
                 
@@ -97,9 +98,10 @@ fetch('https://dummyjson.com/products')
                 })
                 
             } ); */
+            } ); */
 
             allproductDiv.appendChild(allprice);
-            // allproductDiv.appendChild(addToCart);
+            // // allproductDiv.appendChild(addToCart);
             allproductDiv.appendChild(productDetais);
 
             // Display the mini cart for a single product.
@@ -175,6 +177,13 @@ fetch('https://dummyjson.com/products')
             return { product_img: product.thumbnail,product_category:product.category, product_name: product.title, product_price: `$${product.price}`, Element: allproductDiv };
         });
 
+        const p = document.querySelector('.all-prod');
+                p.addEventListener('click', () => {
+                output.forEach(product => {
+                  const isVisible = true; 
+                  product.Element.classList.toggle('hide', !isVisible);
+                  });
+                });
         const p = document.querySelector('.all-prod');
                 p.addEventListener('click', () => {
                 output.forEach(product => {
