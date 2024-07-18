@@ -51,7 +51,7 @@ export default function CreateReviews(product) {
         
         // img
         const img = document.createElement('img');
-        img.src = `avatar1.png`;
+        img.src = `./imgs/avatar1.png`;
         img.alt = `profile`;
         info.appendChild(img);
 

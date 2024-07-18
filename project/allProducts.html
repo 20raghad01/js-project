@@ -16,7 +16,7 @@
                 <div class="sidebar-menu" onclick=showSidebar()>
                     <a href="#" ><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff" ><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
                 </div>
-                <nav class="sidebar backgrd txt-color">
+                <nav class="sidebar backgrd ">
                     <ul >
                         <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#f7cb65"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                         <li onclick=displaycat()>Filter By ▼
@@ -31,6 +31,7 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="all-prod">All Products</li>
                     </ul>
                 </nav>
 
@@ -44,9 +45,11 @@
                 <input type="search" placeholder="Search..." id="searching">
             </div>
             <div class="right-icons">
-                <i class="fa-solid fa-user white-things"></i>
-                <i class="fa-solid fa-cart-shopping icons white-things"></i>
+                <a href="profile.html" class="fa-solid fa-user white-things"></a>
                 <a href="loginRegister.html" class="login white-things">LogIn</a>
+                <a href="CartPage.html" class="fa-solid fa-cart-shopping white-things cart-icon">
+                    <span  id="cart-num"></span>
+                </a>
             </div>
         
         </div>

@@ -47,14 +47,10 @@ fetch('https://dummyjson.com/products')
             allprice.className = 'price';
             allprice.textContent = `$${product.price}`;
             
-            const addToCart = document.createElement('button');
-            addToCart.id = "addToCartAllproducts"
-            addToCart.textContent = 'Add to Cart';
-            addToCart.classList.add('addtocartButton');
 
             const productDetais = document.createElement('button');
             productDetais.id = "addToCartAllproducts"
-            productDetais.textContent = 'See More';
+            productDetais.textContent = 'View Product Details';
             productDetais.classList.add('addtocartButton');
 
             const cartObj = {
@@ -65,7 +61,7 @@ fetch('https://dummyjson.com/products')
                 description: product.description
             }
 
-            addToCart.addEventListener('click', () => {
+            /* addToCart.addEventListener('click', () => {
                 
                 cart.style.display = "block";
                 
@@ -100,10 +96,10 @@ fetch('https://dummyjson.com/products')
                     cart.style.display='none'
                 })
                 
-            });
+            } ); */
 
             allproductDiv.appendChild(allprice);
-            allproductDiv.appendChild(addToCart);
+            // allproductDiv.appendChild(addToCart);
             allproductDiv.appendChild(productDetais);
 
             // Display the mini cart for a single product.
@@ -179,6 +175,13 @@ fetch('https://dummyjson.com/products')
             return { product_img: product.thumbnail,product_category:product.category, product_name: product.title, product_price: `$${product.price}`, Element: allproductDiv };
         });
 
+        const p = document.querySelector('.all-prod');
+                p.addEventListener('click', () => {
+                output.forEach(product => {
+                  const isVisible = true; 
+                  product.Element.classList.toggle('hide', !isVisible);
+                  });
+                });
         const b = document.querySelector('.cbeauty');
                 b.addEventListener('click', () => {
                 output.forEach(product => {

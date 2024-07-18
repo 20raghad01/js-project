@@ -4,9 +4,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Wittgenstein", serif;
 }
-
+.txt-color{
+    font-size: 50px;
+    font-weight: bold;
+}
+header {
+    display: block;
+    unicode-bidi: isolate;
+    
+}
+h1{
+    margin-block-end: 0.67em;
+    margin-block-start:0.67em;
+}
 :root {
     --primary-color: #3b3b3b;
     --secondary-color: #202221;
@@ -30,17 +42,12 @@
 }
 
 
-* {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 html,
 body {
     height: 100vh;
     overflow: hidden;
+    
 }
 
 
@@ -293,12 +300,12 @@ body {
     height: 334vh;
     width: 300vw;
     transform: translate(35%, 0);
-    background-image: linear-gradient(-45deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background-image: linear-gradient(-45deg, var(--primary-color) 0%, var(--primary-color) 100%);
     transition: 1s ease-in-out;
     z-index: 6;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-bottom-right-radius: max(50vw, 50vh);
-    border-top-left-radius: max(50vw, 50vh);
+   
 }
 
 .form-container.sign-in::before {
