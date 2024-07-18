@@ -24,18 +24,6 @@
     // Call the function to load user data initially
     displayUserInfo();
 
-    // Logout function
-
-
-    // Attach logout event listener to logout button
-    const logoutButton = document.getElementById("logoutButton");
-    if (logoutButton) {
-        logoutButton.addEventListener("click", logout);
-    } else {
-        console.error("Logout button not found.");
-    }
-    // Call the function to load user data initially
-    displayUserInfo();
 
     // Logout function
 
