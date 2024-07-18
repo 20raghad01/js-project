@@ -14,12 +14,6 @@
         document.getElementById("user__phone").innerText = userPhone;
         document.getElementById("user__gender").innerText = userGender;
     }
-        // Display user info
-        document.getElementById("user__name").innerText = `${firstName} ${lastName}`;
-        document.getElementById("user__email").innerText = userEmail;
-        document.getElementById("user__phone").innerText = userPhone;
-        document.getElementById("user__gender").innerText = userGender;
-    }
 
     // Call the function to load user data initially
     displayUserInfo();
@@ -46,16 +40,7 @@ function logout() {
             localStorage.removeItem('email');
             localStorage.removeItem('phone');
             localStorage.removeItem('gender');
-         localStorage.removeItem('isLoggedIn');
-            localStorage.removeItem('first_name');
-            localStorage.removeItem('last_name');
-            localStorage.removeItem('email');
-            localStorage.removeItem('phone');
-            localStorage.removeItem('gender');
-
-            localStorage.removeItem('isLoggedIn');
-            window.location.href = 'login.html';
-        }
+      
             localStorage.removeItem('isLoggedIn');
             window.location.href = 'login.html';
         }
